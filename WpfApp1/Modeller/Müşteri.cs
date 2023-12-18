@@ -19,17 +19,17 @@ namespace WpfApp1.Modeller
         public string AdSoyad { get; set; }
 
         [MaxLength(45)]
-        public string FirmaAdı { get; set; }
+        public string? FirmaAdı { get; set; }
 
         [Required]
         [MaxLength(20)]
         public string Telefon { get; set; }
 
         [MaxLength(45)]
-        public string EPosta { get; set; }
+        public string? EPosta { get; set; }
 
         [MaxLength(255)]
-        public string Adres { get; set; }
+        public string? Adres { get; set; }
 
         public virtual ICollection<Satış> Satışlar { get; set; } = new HashSet<Satış>();
 

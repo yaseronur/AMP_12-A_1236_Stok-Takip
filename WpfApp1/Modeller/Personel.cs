@@ -29,10 +29,10 @@ namespace WpfApp1.Modeller
 
         
         [MaxLength(20)]
-        public string EPosta { get; set; }
+        public string? EPosta { get; set; }
 
         [MaxLength(255)]
-        public string Adres { get; set; }
+        public string? Adres { get; set; }
 
         [Required]
         [MaxLength(45)]

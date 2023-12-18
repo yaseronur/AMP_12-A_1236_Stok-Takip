@@ -29,7 +29,7 @@ namespace WpfApp1.Modeller
         public DateTime İşlemTarihi { get; set; }
 
         [MaxLength(255)]
-        public string Açıklama { get; set; }
+        public string? Açıklama { get; set; }
 
         public virtual ICollection<SatışDetayı> SatışDetayları { get; set; } = new HashSet<SatışDetayı>();
 

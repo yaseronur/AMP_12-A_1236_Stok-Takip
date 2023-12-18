@@ -30,10 +30,10 @@ namespace WpfApp1.Modeller
 
       
         [MaxLength(45)]
-        public string Email { get; set; }
+        public string? Email { get; set; }
 
         [MaxLength(255)]
-        public string Adres { get; set; }
+        public string? Adres { get; set; }
 
         public virtual ICollection<Ürün> Ürünler { get; set; } = new HashSet<Ürün>();
 

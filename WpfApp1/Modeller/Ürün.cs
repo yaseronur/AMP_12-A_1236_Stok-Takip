@@ -34,7 +34,7 @@ namespace WpfApp1.Modeller
         [Required]
         public int Fiyat { get; set; }
 
-        public string Açıklama { get; set; }
+        public string? Açıklama { get; set; }
 
         public virtual ICollection<SatışDetayı> SatışDetayları { get; set; } = new HashSet<SatışDetayı>();
 
