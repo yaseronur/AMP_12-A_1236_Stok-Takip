@@ -45,7 +45,7 @@ namespace WpfApp1.Modeller
         [ForeignKey(nameof(Yetki))]
         [Required]
         public int YetkiId { get; set; }
-        public Yetki Yetki { get; set; }
+        public virtual Yetki Yetki { get; set; }
 
         public virtual ICollection<Satış> Satışlar { get; set; } = new HashSet<Satış>();
     }

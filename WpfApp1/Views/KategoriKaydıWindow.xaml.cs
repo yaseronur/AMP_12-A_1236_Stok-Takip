@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfApp1.Modeller;
 
 namespace WpfApp1.Views
 {
@@ -22,6 +23,14 @@ namespace WpfApp1.Views
         public KategoriKaydıWindow()
         {
             InitializeComponent();
+            Listele();
+        }
+        private void Listele()
+        {
+            var kategoriler = Db.Context.Kategoriler.ToList();
+            DgKategoriler.ItemsSource = kategoriler;
+
+
         }
     }
 }

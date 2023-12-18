@@ -37,9 +37,9 @@
             </StackPanel>
 
         </GroupBox>
-        <DataGrid x:Name="DgKategoriler" AutoGenerateColumns="False" Grid.Row="1">
+        <DataGrid x:Name="DgKategoriler" AutoGenerateColumns="False" IsReadOnly="True" Grid.Row="1">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Kategori Adı" Binding="{Binding KategoriAdı}"/>
+                <DataGridTextColumn Header="Kategori Adı" Binding="{Binding KategoriAdı}" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
 
