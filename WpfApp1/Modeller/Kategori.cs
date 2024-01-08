@@ -15,7 +15,7 @@ namespace WpfApp1.Modeller
         public int Id { get; set; }
 
         [Required]
-        [MaxLength(45)]
+        [MaxLength(50)]
         public string KategoriId { get; set; }
 
         public virtual ICollection<Ürün> Ürünler { get; set; } = new HashSet<Ürün>();

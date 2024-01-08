@@ -14,32 +14,33 @@ namespace WpfApp1.Modeller
         public int Id { get; set; }
 
         [Required]
-        [MaxLength(45)]
+        [MaxLength(15)]
         public string Ad { get; set; }
 
 
         [Required]
-        [MaxLength(45)]
+        [MaxLength(10)]
         public string Soyad { get; set; }
 
 
         [Required]
-        [MaxLength(20)]
+        [MaxLength(10)]
         public string Telefon { get; set; }
 
         
-        [MaxLength(20)]
+        [MaxLength(40)]
         public string? EPosta { get; set; }
 
-        [MaxLength(255)]
+        [MaxLength(300)]
         public string? Adres { get; set; }
 
         [Required]
-        [MaxLength(45)]
+        [MaxLength(25)]
         public string KullanıcıAdı { get; set; }
 
         [Required]
-        [MaxLength(45)]
+        [MaxLength(20)]
+        [MinLength(7)]
         public string Parola { get; set; }
 
         [ForeignKey(nameof(Yetki))]
